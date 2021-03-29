@@ -112,7 +112,9 @@ sudo systemctl enable ag-chain-cosmos
 sudo systemctl daemon-reload
 sudo systemctl start ag-chain-cosmos
 
-echo "To check on the status of syncing:
+# run this line again to make sure go is a go.
+source $HOME/.profile
+
+echo "To check on the status of syncing use command below:
 
 ag-cosmos-helper status 2>&1 | jq .SyncInfo"
-
